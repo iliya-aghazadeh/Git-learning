@@ -1,0 +1,28 @@
+1-Run git in a folder --> "git init"
+    by using the command in the terminal
+    now git is tracking all the changes in this folder
+
+
+2- seeing the changes from the latest verion --> "git status"
+    this will tell what changes has been done since the previous version
+
+3- choosing what features to add from the previous version --> "git add"
+    pick which changes to have from the last version 
+    --> if we only a file to be added, it will add that file but if we choose a folder to be add, it will add that folder and all it's files and sub folders
+    --> to add everything, we can use "git add ."
+
+4- giving the new version --> "git commit -m "Version 1.1.1" 
+
+5- to add something to the previous version : 
+    1- we first make the changes 
+    2- then we add the changes : "git add ."
+    3- we will give it to the previous file : git commit -m "Version 1.0.0." --amend
+
+6- when we add some changes, they will be shown in Stage Changes and the changes that are not added yet will be shown in Changes
+
+7- Remove a Stage change and bring it back to (unstaged) Changes area --> "git reset Learning.txt"
+
+8- undo the changes made in a file --> git checkout -- file_name or .
+    *** changes can be made for the files that are not staged ***
+
+9- to go to a specific version --> git checkout commit_hash
